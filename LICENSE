@@ -1,0 +1,38 @@
+Copyright (c) 2026 Hager Hegazy. All rights reserved.
+
+VelVet AlGo ("Sam"): source code, prompts, database design and documentation.
+
+This repository is published for viewing and evaluation only, for example by
+recruiters, employers and reviewers of the author's portfolio.
+
+PERMITTED
+- Viewing and reading the code and the documentation.
+- Forking this repository on GitHub, only as allowed by GitHub's Terms of
+  Service (for viewing, and for proposing changes back to the author).
+
+NOT PERMITTED without the author's prior written permission
+- Copying or reusing the code, prompts, database design or documentation, in
+  whole or in part, in any other project.
+- Modifying, adapting, translating or creating derivative works.
+- Distributing, publishing, sublicensing, selling or hosting the code or any
+  derivative of it.
+- Using the code, or any part of it, for commercial purposes or in production.
+- Using the content of this repository to train machine learning or AI models.
+- Removing or changing this notice.
+
+THIRD-PARTY COMPONENTS
+This project depends on third-party libraries and services (for example
+FastAPI, Supabase, Groq, Meta APIs, Telegram, Streamlit and edge-tts). They
+remain under their own licenses and terms. This license applies only to the
+author's original work.
+
+NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+PERMISSION REQUESTS
+To ask for permission to use any part of this work, contact the author:
+https://www.linkedin.com/in/hager-hegazy
