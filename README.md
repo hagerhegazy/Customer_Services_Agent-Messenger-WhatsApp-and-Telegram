@@ -29,12 +29,10 @@
 9. [Meta setup](#9-meta-setup)
 10. [Reliability and operations](#10-reliability-and-operations)
 11. [Configuration](#11-configuration)
-12. [Running it locally](#12-running-it-locally)
-13. [Testing](#13-testing)
-14. [Engineering log: what broke and how it was fixed](#14-engineering-log-what-broke-and-how-it-was-fixed)
-15. [Limitations and roadmap](#15-limitations-and-roadmap)
-16. [Tech stack](#16-tech-stack)
-17. [Project layout](#17-project-layout)
+12. [Testing](#13-testing)
+13. [Engineering log: what broke and how it was fixed](#14-engineering-log-what-broke-and-how-it-was-fixed)
+14. [Tech stack](#16-tech-stack)
+15. [Project layout](#17-project-layout)
 
 ---
 
