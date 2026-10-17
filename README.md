@@ -7,7 +7,7 @@
 ![Meta](https://img.shields.io/badge/Meta-Messenger%20%7C%20WhatsApp%20Cloud%20API-0866FF)
 ![Status](https://img.shields.io/badge/status-portfolio%20project-lightgrey)
 
-> **Sam answers comments, chats in Egyptian Arabic (text or voice), takes and edits orders, sends them to the delivery company on WhatsApp, calls the owner on Telegram when a human is needed, and writes a shift report every 8 hours.**
+> **Sam answers comments, chats in English and Egyptian Arabic (text or voice), takes and edits orders, sends them to the delivery company on WhatsApp, calls the owner on Telegram when a human is needed, and writes a shift report every 8 hours.**
 > The AI decides *what* to do. The code decides *what is allowed*.
 
 **Demo video (90 seconds):** `PASTE_VIDEO_LINK_HERE`
