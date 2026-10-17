@@ -12,7 +12,7 @@
 
 **Demo video (90 seconds):** `PASTE_VIDEO_LINK_HERE`
 
-> **Honest scope note.** This is a portfolio project. The Meta app runs in *Development mode* (only accounts with a role on the app can talk to the Page bot), and the WhatsApp side uses Meta's test setup. The source code is private and available on request; this repository documents the full design.
+> **Honest scope note.** This is a portfolio project. The Meta app runs in *Development mode* (only accounts with a role on the app can talk to the Page bot), and the WhatsApp side uses Meta's test setup. The source code is published here for viewing and evaluation only; see [LICENSE](LICENSE). This README documents the full design.
 
 ---
 
@@ -564,7 +564,6 @@ Needs attention: orders not sent to delivery / low stock / many cancellations / 
 
 ## 11. Configuration
 
-Names only; values are never committed. A `.env.example` with empty values is provided in the private repository.
 
 | Variable | Purpose |
 |---|---|
@@ -649,3 +648,6 @@ requirements.txt   dependencies
 ---
 
 *Questions or a code walkthrough: [LinkedIn](https://www.linkedin.com/in/hager-hegazy)*
+## License
+
+Copyright (c) 2026 Hager Hegazy. All rights reserved. The code is public for viewing and evaluation only. Copying, modification, redistribution, commercial use and AI training require written permission. See [LICENSE](LICENSE).
