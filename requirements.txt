@@ -1,0 +1,10 @@
+supabase
+python-dotenv
+groq
+fastapi
+uvicorn
+ngrok
+openai
+streamlit
+httpx
+edge-tts
