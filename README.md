@@ -29,10 +29,10 @@
 9. [Meta setup](#9-meta-setup)
 10. [Reliability and operations](#10-reliability-and-operations)
 11. [Configuration](#11-configuration)
-12. [Testing](#13-testing)
-13. [Engineering log: what broke and how it was fixed](#14-engineering-log-what-broke-and-how-it-was-fixed)
-14. [Tech stack](#16-tech-stack)
-15. [Project layout](#17-project-layout)
+12. [Testing](#12-testing)
+13. [Engineering log: what broke and how it was fixed](#13-engineering-log-what-broke-and-how-it-was-fixed)
+14. [Tech stack](#14-tech-stack)
+15. [Project layout](#15-project-layout)
 
 ---
 
@@ -648,4 +648,4 @@ requirements.txt   dependencies
 
 ---
 
-*Questions or a code walkthrough: `www.linkedin.com/in/hager-hegazy*
+*Questions or a code walkthrough: [LinkedIn](https://www.linkedin.com/in/hager-hegazy)*
