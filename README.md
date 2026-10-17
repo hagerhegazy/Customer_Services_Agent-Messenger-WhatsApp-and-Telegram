@@ -12,7 +12,7 @@
 
 **Demo video (90 seconds):** `PASTE_VIDEO_LINK_HERE`
 
-> **Honest scope note.** This is a portfolio project. The Meta app runs in *Development mode* (only accounts with a role on the app can talk to the Page bot), and the WhatsApp side uses Meta's test setup. The source code is published here for viewing and evaluation only; see [LICENSE](LICENSE). This README documents the full design.
+> The Meta app runs in *Development mode* (only accounts with a role on the app can talk to the Page bot), and the WhatsApp side uses Meta's test setup. The source code is published here for viewing and evaluation only; see [LICENSE](LICENSE). This README documents the full design.
 
 ---
 
