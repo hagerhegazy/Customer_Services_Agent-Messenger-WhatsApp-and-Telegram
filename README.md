@@ -583,47 +583,7 @@ Names only; values are never committed. A `.env.example` with empty values is pr
 
 ---
 
-## 12. Running it locally
-
-```bash
-python -m venv venv && venv\Scripts\activate         # Windows
-pip install -r requirements.txt
-
-uvicorn main:app --port 8080                          # the server
-ngrok http 8080                                       # public HTTPS address for Meta's webhook
-python poller.py                                      # comment polling fallback (separate terminal)
-streamlit run dashboard.py                            # dashboard
-python summary.py                                     # print and send the shift report
-```
-
-Utility commands
-
-| Command | Purpose |
-|---|---|
-| `python whatsapp.py hello` | Test WhatsApp connection (built-in template) |
-| `python whatsapp.py templates` | List templates and approval status |
-| `python whatsapp.py <order_id>` | Send one order to the courier |
-| `python whatsapp.py resend` | Re-send orders stuck in `pending` |
-| `python voice.py stt file.m4a` / `python voice.py say "text" out.mp3` | Test speech to text and text to speech |
-| `python check_page.py` | Token type, permissions, Page webhook subscription |
-| `python check_page.py comments` | Read posts and comments as Facebook sees them |
-| `python simulate.py comment "text"` | Send a signed fake comment event to the local server |
-
----
-
-## 13. Testing
-
-**Scenario test (happy path)**
-1. Comment on a post, expect a public reply and a DM.
-2. Ask about the dress, expect sizes with weight ranges and the real colors.
-3. Ask for a color that does not exist, expect a polite "we don't have it" and the real list.
-4. Order, expect the confirmation with size, color and total; check the courier's WhatsApp and the Supabase rows.
-5. Change quantity and address, expect the **same** order number, one update message to the courier, recalculated total and stock.
-6. Send a voice note, expect a voice reply plus text and a read-back of phone and address.
-7. Ask for a refund, expect a Telegram alert and a silent bot afterwards; resolve the handoff and expect the bot to resume.
-8. Run `python summary.py`, expect numbers that match the Supabase tables and the dashboard.
-
-**Red-team checks**
+## 12. Testing
 
 | Attempt | Expected |
 |---|---|
@@ -639,7 +599,7 @@ Utility commands
 
 ---
 
-## 14. Engineering log: what broke and how it was fixed
+## 13. Engineering log: what broke and how it was fixed
 
 | Problem | Cause | Fix |
 |---|---|---|
@@ -662,34 +622,14 @@ Utility commands
 | Real comments never reached the webhook | `feed` events were not delivered in this setup | Added `poller.py` and a shared duplicate guard |
 | Page token had permissions but no Page selected | Page was not ticked when generating the token | Regenerated the token with the Page selected; `check_page.py` to verify |
 
----
-
-## 15. Limitations and roadmap
-
-**Limitations**
-- Meta app is in Development mode; public use would require App Review and business verification.
-- The courier channel was tested with Meta's WhatsApp test setup.
-- Stock is per product, not per size or color.
-- Name, phone and address are stored on the customer, not on each order.
-- Text-to-speech uses the free edge-tts service (an unofficial endpoint), suitable for a demo but not for production.
-- Speech recognition can misspell names and addresses, which is why the bot reads them back.
-- The poller and the shift report are simple scheduled scripts, not a managed job system.
-
-**Roadmap**
-- Variant table (product, size, color, stock) for per-variant availability.
-- Delivery details stored per order.
-- Courier status updates (out for delivery, delivered) written back to the order.
-- Hosting with a scheduler for the 8-hour report, and authentication on the dashboard.
-- Per-customer rate limits and an abuse monitor.
-- Web chat demo with a simulated courier panel.
 
 ---
 
-## 16. Tech stack
+## 14. Tech stack
 
 Python 3.13, FastAPI, Uvicorn, httpx, Supabase (PostgreSQL), Groq (`openai/gpt-oss-120b`, `whisper-large-v3`), edge-tts, Meta Graph API v23.0 (Messenger Platform, Pages, WhatsApp Cloud API), Telegram Bot API, Streamlit, ngrok (local tunnel).
 
-## 17. Project layout
+## 15. Project layout
 
 ```text
 main.py            FastAPI app, health check, debug-only /chat
@@ -710,4 +650,4 @@ requirements.txt   dependencies
 
 ---
 
-*Built by `YOUR_NAME`. Questions or a code walkthrough: `YOUR_LINKEDIN_LINK`.*
+*Questions or a code walkthrough: `www.linkedin.com/in/hager-hegazy*
