@@ -10,7 +10,7 @@
 > **Sam answers comments, chats in English and Egyptian Arabic (text or voice), takes and edits orders, sends them to the delivery company on WhatsApp, calls the owner on Telegram when a human is needed, and writes a shift report every 8 hours.**
 > The AI decides *what* to do. The code decides *what is allowed*.
 
-**Demo video (90 seconds):** `PASTE_VIDEO_LINK_HERE`
+**Demo video (90 seconds):** [`Demo`](https://lnkd.in/p/gKY_DabE)
 
 > The Meta app runs in *Development mode* (only accounts with a role on the app can talk to the Page bot), and the WhatsApp side uses Meta's test setup. The source code is published here for viewing and evaluation only; see [LICENSE](LICENSE). This README documents the full design.
 
