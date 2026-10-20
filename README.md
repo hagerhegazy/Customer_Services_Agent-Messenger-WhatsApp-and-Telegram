@@ -136,14 +136,6 @@ flowchart TB
 | `dashboard.py` | Read-only Streamlit view of the same statistics. |
 | `simulate.py`, `check_page.py` | Developer tools: signed fake webhook events; token, permission and Page-subscription diagnostics. |
 
-### Design principles
-
-1. **The model proposes, the code disposes.** Every tool call is validated in code before it touches the database.
-2. **Identity comes from Meta, not from the model.** The customer id is attached by the server; it is not a parameter the model can set.
-3. **Numbers come from the database.** Prices, totals and stock are never produced by the model.
-4. **The customer-facing order message is built by code** so it can never omit the total, repeat an order, or alter a phone number.
-5. **Fail loudly to the owner, quietly to the customer.** Failures that matter (courier not notified) alert the owner on Telegram; customers get a simple, non-technical message.
-6. **Idempotent everywhere.** Meta can deliver an event twice, and a customer can say "yes" twice; neither creates a second order.
 
 ---
 
