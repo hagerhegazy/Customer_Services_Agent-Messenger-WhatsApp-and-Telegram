@@ -52,20 +52,6 @@
 | **Dashboard** | Streamlit page: orders, revenue, cancellations, orders not sent to the courier, top products, low stock, recent orders. |
 | **Guardrails** | Ownership checks, validated inputs, database prices, hidden stock numbers, code-built order messages, prompt-injection resistance. See [section 5](#5-guardrails). |
 
-### Screenshots
-
-| Comment and DM | Arabic order chat | Order confirmation |
-|---|---|---|
-| `ADD_SCREENSHOT` | `ADD_SCREENSHOT` | `ADD_SCREENSHOT` |
-
-| Voice note and reply | Courier on WhatsApp | Order update on WhatsApp |
-|---|---|---|
-| `ADD_SCREENSHOT` | `ADD_SCREENSHOT` | `ADD_SCREENSHOT` |
-
-| Guardrails | Telegram alert and shift report | Dashboard |
-|---|---|---|
-| `ADD_SCREENSHOT` | `ADD_SCREENSHOT` | `ADD_SCREENSHOT` |
-
 ---
 
 ## 2. Architecture
